@@ -1,0 +1,329 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 5%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(245, 0, 0, 0.1);
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #555;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 40px;
+    letter-spacing: 1px;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #555;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  header {
+    background-image: url("Peluqueria-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
+    height: 600px; /* Altura del encabezado */
+  }
+  
+  .header-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .horarios {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+.galeria2 h2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.horarios h2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  li strong {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .galeria3 {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .galeria3 h2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .galeria3 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .galeria3 .col {
+    width: calc((100% - 48px) / 3);
+    margin: 8px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .galeria3 .col img {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+  
+  .galeria3 .col .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .galeria3 .col:hover .caption {
+    opacity: 1;
+  }
+
+  .servicios {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+  }
+.servicios h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+hr {
+    width: 60%;
+}
+
+  .row {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(243, 6, 6, 0.3);
+  }
+
+  footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .redes-sociales a {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  
+  .redes-sociales a:last-child {
+    margin-right: 0;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .col {
+      width: 100%;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .galeria3 {
+      padding: 20px;
+    }
+    .galeria3 .col {
+      width: calc((100% - 16px) / 2);
+    }
+    .galeria3 .col img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  }
+  @media only screen and (max-width: 480px) {
+    .galeria3 .col {
+      width: 100%;
+    }
+    .galeria3 .col img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+      }
+      
+      .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+      
+      .nav-links li {
+        opacity: 0;
+      }
+      
+      .burger {
+        display: block;
+      }
+    }
+    
+    .nav-active {
+      transform: translateX(0%);
+    }
+    
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    
+  
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+    
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    
+    .nav-links li {
+      opacity: 0;
+    }
+    
+    .burger {
+      display: block;
+    }
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
